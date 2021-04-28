@@ -9,65 +9,84 @@
 </head>
 
 <body>
-    <div id="demo"></div>
+
     <div class="container" id="calc">
         <div class="row">
+            <div class="col">
+                <div id="output"> </div>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-sm">
-                0
+                <button id="back" onclick="backSpace()">backspace</button>
             </div>
             <div class="col-sm">
-                1
+                <button id="leftP" onclick="concatLeftP()">(</button>
             </div>
             <div class="col-sm">
-                2
+                <button id="rightP" onclick="concatRightP()">)</button>
             </div>
             <div class="col-sm">
-                3
+                <button id="clear" onclick="nothing()">A/C</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <button id="seven" onclick="concat7()">7</button>
+            </div>
+            <div class="col-sm">
+                <button id="eight" onclick="concat8()">8</button>
+            </div>
+            <div class="col-sm">
+                <button id="nine" onclick="concat9()">9</button>
+            </div>
+            <div class="col-sm">
+                <button id="plus" onclick="concatPlus()">+</button>
             </div>
         </div>
 
         <div class="row">
             <div class="col-sm">
-                4
+                <button id="four" onclick="concat4()">4</button>
             </div>
             <div class="col-sm">
-                5
+                <button id="five" onclick="concat5()">5</button>
             </div>
             <div class="col-sm">
-                6
+                <button id="six" onclick="concat6()">6</button>
             </div>
             <div class="col-sm">
-                7
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm">
-                8
-            </div>
-            <div class="col-sm">
-                9
-            </div>
-            <div class="col-sm">
-                10
-            </div>
-            <div class="col-sm">
-                11
+                <button id="minus" onclick="concatMinus()">-</button>
             </div>
         </div>
 
         <div class="row">
             <div class="col-sm">
-                12
+                <button id="one" onclick="concat1()">1</button>
             </div>
             <div class="col-sm">
-                13
+                <button id="two" onclick="concat2()">2</button>
             </div>
             <div class="col-sm">
-                14
+                <button id="three" onclick="concat3()">3</button>
             </div>
             <div class="col-sm">
-                15
+                <button id="multiply" onclick="concatTimes()">*</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm">
+                <button id="clear" onclick="concatDec()">.</button>
+            </div>
+            <div class="col-sm">
+                <button id="zero" onclick="concat0()">0</button>
+            </div>
+            <div class="col-sm">
+                <button id="equals" onclick="resultEqu()">=</button>
+            </div>
+            <div class="col-sm">
+                <button id="divide" onclick="concatDivide()">/</button>
             </div>
         </div>
 
